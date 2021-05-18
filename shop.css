@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .main-container-shop{
+        width: 90%;
+    }
+    .left-container-shop{
+        float: left;
+        width: 70%;
+        height: 100px;
+    }
+}
+
+@media (max-width: 670) {
+    .main-container-shop{
+        width: 30%;
+    }
+    .left-container-shop{
+        float: left;
+        width: 50%;
+        height: 50px;
+    }
+}
+
+.main-container-shop{
+    margin: 40px;
+}
+
+.left-container-shop{
+    float: left;
+    width: 250px;
+    height: 2000px;
+}
+
+.left-container-shop a{
+    text-decoration: none;
+    color: black;
+}
+
+.slider {
+    width: 80%;
+}
+
+.shop-categories ul{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot:hover{
+    border: black solid;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.black{
+    background-color: black;
+}
+
+.white{
+    background-color: white;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.green{
+    background-color: green;
+}
+
+.shop-filter{
+    margin-top: 60px;
+}
+
+.filter{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.shop-product{
+    display: flex;
+    flex-basis: 45%;
+}
+
+.product{
+    margin-top: 5px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.image{
+    height: 100%;
+}
+
+.image img{
+    width: 80%;
+    height: auto;
+}
+
+.overlay{
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.block{
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    width: 80%;
+    height: 90%;
+}
+
+.overlay .heart{
+    width: 6%;
+    height: auto;
+    position: absolute;
+    top: 3%;
+    right: 25%;
+    transition: .3s ease;
+}
+
+.overlay .hov{
+    opacity: 0;
+}
+
+.overlay .hov:hover{
+    opacity: 1;
+}
+
+.Add{
+    position: absolute;
+    bottom: 15%;
+    left: 20%;
+    background-color: black;
+    width: 40%;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+} 
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.Add:hover{
+    background-color: rgb(235, 74, 52);
+}
+
+#halaman{
+    margin-left: 19%;
+    margin-top: 20px;
+}
+
+.page{
+    text-align: center;
+    padding: 8px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.page2{
+    color: rgb(110, 108, 108);
+}
+
+.page2:hover{
+    background-color: black;
+    color: white;
+}
