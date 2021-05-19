@@ -15,17 +15,6 @@
     }
 }
 
-@media (max-width: 670) {
-    .main-container-shop{
-        width: 30%;
-    }
-    .left-container-shop{
-        float: left;
-        width: 50%;
-        height: 50px;
-    }
-}
-
 .main-container-shop{
     margin: 40px;
 }
@@ -38,7 +27,7 @@
 
 .left-container-shop a{
     text-decoration: none;
-    color: black;
+    color: #252b31;
 }
 
 .slider {
@@ -58,7 +47,7 @@
 }
 
 .dot:hover{
-    border: black solid;
+    border: #252b31 solid;
 }
 
 .red {
@@ -93,6 +82,11 @@
     background-color: green;
 }
 
+.sort p{
+    text-align: right;
+    color: #7f8685;
+}
+
 .shop-filter{
     margin-top: 60px;
 }
@@ -111,10 +105,7 @@
     margin-top: 5px;
     margin-bottom: 100px;
     position: relative;
-}
-
-.image{
-    height: 100%;
+    display: block;
 }
 
 .image img{
@@ -122,16 +113,25 @@
     height: auto;
 }
 
-.overlay{
+.image .overlay{
     opacity: 0;
     transition: .5s ease;
 }
 
-.block{
-    background-color: rgba(0, 0, 0, 0.35);
+.info{
+    background-color: white;
+    z-index: 1;
     position: absolute;
     width: 80%;
-    height: 90%;
+}
+
+.block{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
 }
 
 .overlay .heart{
@@ -141,6 +141,7 @@
     top: 3%;
     right: 25%;
     transition: .3s ease;
+    cursor: pointer;
 }
 
 .overlay .hov{
@@ -153,12 +154,12 @@
 
 .Add{
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 20%;
-    background-color: black;
+    background-color: #252b31;
     width: 40%;
-    color: white;
-    font-size: 20px;
+    color: #f6fafb;
+    font-size: 18px;
     padding: 10px;
     text-align: center;
     border-radius: 20px;
@@ -171,7 +172,8 @@
 }
 
 .Add:hover{
-    background-color: rgb(235, 74, 52);
+    background-color: #d49c6b;
+    font-weight: bold;
 }
 
 #halaman{
@@ -191,6 +193,99 @@
 }
 
 .page2:hover{
-    background-color: black;
-    color: white;
+    background-color: #252b31;
+    color: #f6fafb;
+}
+
+
+@media (max-width: 1000px){
+    .Add{
+        font-size: 15px;
+    }
+    .info h3{
+        font-size: 15px;
+    }
+    .info h4{
+        font-size: 12px;
+    }
+    .sort p{
+        font-size: 12px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 886px){
+    .Add{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 726px){
+    .Add{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 670px) {
+    .Add{
+        font-size: 10px;
+    }
+    .main-container-shop{
+        width: 80%;
+    }
+    .left-container-shop{
+        float:none ;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .sort p{
+        text-align: left;
+        margin: 5px 0 5px 0;
+    }
+    #halaman{
+        margin-left: 5%;
+    }
+    .sort p{
+        margin: 10px 0;
+    }
+    .image img, .block{
+        width: 90%;
+        margin-left: 10%;
+    }
+    .overlay .heart{
+        right: 5%;
+    }
+    .Add{
+        margin-left: 13%;
+    }
+    .info{
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 505px){
+    .Add{
+        font-size: 8px;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 433px){
+    .Add{
+        font-size: 5px;
+        padding: 3px;
+    }
+    .info h3{
+        font-size: 12px;
+    }
+    .info h4{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 390px){
+    .image img, .block, .overlay .heart, .Add, .info{
+        margin-left: 0;
+    }
 }
