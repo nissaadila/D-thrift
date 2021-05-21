@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Shop</title>
+</head>
+<body>
+    <div class="main-container-shop">
+        <div class="banner">
+            <img src="" alt="">
+        </div>
+
+        <div class="left-container-shop">
+            <div class="shop-categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#" id="all">All</a></li>
+                    <li><a href="#" id="women">Women</a></li>
+                    <li><a href="#" id="men">Men</a></li>
+                    <li><a href="#" id="kids">Kids</a></li>
+                    <li><a href="#" id="accesories">Accesories</a></li>
+                </ul>
+            </div>
+           
+            <div class="shop-filter">
+                <h3>Filters</h3>
+                <hr>
+                <div class="filter price">
+                    <h4>Price</h4>
+                <div class="slider">
+                    <input type="range" min="1" max="200" value="100" class="slider" id="SliderRange">
+                    <p>Price: $0 -- $ <span id="harga"></span></p>
+                  </div>
+                </div>
+                
+                <div class="filter color">
+                    <h4>Color</h4>
+                    <span class="dot red" id="colors1" onclick="colorButton1()"></span>
+                    <span class="dot blue" id="colors2" onclick="colorButton2()"></span>
+                    <span class="dot purple" id="colors3" onclick="colorButton3()"></span>
+                    <span class="dot yellow" id="colors4" onclick="colorButton4()"></span>
+                    <span class="dot black" id="colors5" onclick="colorButton5()"></span>
+                    <span class="dot white" id="colors6" onclick="colorButton6()"></span>
+                    <span class="dot orange" id="colors7" onclick="colorButton7()"></span>
+                    <span class="dot green" id="colors8" onclick="colorButton8()"></span>
+                </div>
+
+                <div class="filter search">
+                    <input type="text" placeholder="Search Products..">
+                    <input type="submit" value="Search">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="right-container-shop">
+            <div class="sort">
+                <form>
+                    <select name="sorting" id="sorting">
+                        <option value="Default">Default</option>
+                        <option value="Popularity">Popularity</option>
+                        <option value="Price: low to high">Price: low to high</option>
+                        <option value="Price: high to low">Price: high to low</option>
+                    </select>
+                    <select name="price" id="price">
+                        <option value="Price">Price</option>
+                        <option value="$1--$50">$1--$50</option>
+                        <option value="$51--$100">$51--$100</option>
+                        <option value="$101--$150">$101--$150</option>
+                        <option value="$151--$200">$151--$200</option>
+                    </select>
+                </form>
+                <p>Showing 1–8 of 16 results</p>
+            </div>
+
+            <div class="shop-product">
+                <div class="product">
+                    <div class="image">
+                        <div class="overlay">
+                            <span class="block"></span>
+                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
+                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <button onclick="add()" class="Add">Add to Cart</button>
+                        </div>
+                        <img src="https://cdn.discordapp.com/attachments/843073940247019520/843075616660389908/1.1.png" alt="Printed Stretch Jumpsuit">
+                    </div>
+                    <div class="info">
+                        <h3>Printed Stretch Jumpsuit</h3>
+                        <h4>$50</h4>
+                    </div>
+                </div>
+                
+    
+                <div class="product">
+                    <div class="image">
+                        <div class="overlay">
+                            <span class="block"></span>
+                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
+                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <button onclick="add()" class="Add">Add to Cart</button>
+                        </div>
+                        <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076198866485268/11.png" alt="LXX Suit">
+                    </div>
+                    <div class="info">
+                        <h3>LXX Suit</h3>
+                        <h4>$100</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-product">
+                <div class="product">
+                    <div class="image">
+                        <div class="overlay">
+                            <span class="block"></span>
+                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
+                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <button onclick="add()" class="Add">Add to Cart</button>
+                        </div>
+                        <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png" alt="Da Floral Jumpsuit">
+                    </div>
+                    <div class="info">
+                        <h3>Da Floral Jumpsuit</h3>
+                        <h4>$55</h4>
+                    </div>
+                </div>
+                
+    
+                <div class="product">
+                    <div class="image">
+                        <div class="overlay">
+                            <span class="block"></span>
+                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
+                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <button onclick="add()" class="Add">Add to Cart</button>
+                        </div>
+                        <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076273054941204/13.png" alt="Casual block Shoes">
+                    </div>
+                    <div class="info">
+                        <h3>Casual block Shoes</h3>
+                        <h4>$15</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-product">
+                <div class="product">
+                    <div class="image">
+                        <div class="overlay">
+                            <span class="block"></span>
+                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
+                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <button onclick="add()" class="Add">Add to Cart</button>
+                        </div>
+                        <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076343658053642/19.png" alt="Blue da Floral Bag">
+                    </div>
+                    <div class="info">
+                        <h3>Blue da Floral Bag</h3>
+                        <h4>$25</h4>
+                    </div>
+                </div>
+                
+    
+                <div class="product">
+                    <div class="image">
+                        <div class="overlay">
+                            <span class="block"></span>
+                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
+                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <button onclick="add()" class="Add">Add to Cart</button>
+                        </div>
+                        <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076414747574272/27.png" alt="DY Denim Jacket">
+                    </div>
+                    <div class="info">
+                        <h3>DY Denim Jacket</h3>
+                        <h4>$23</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-product">
+                <div class="product">
+                    <div class="image">
+                        <div class="overlay">
+                            <span class="block"></span>
+                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
+                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <button onclick="add()" class="Add">Add to Cart</button>
+                        </div>
+                        <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076439590436904/21.png" alt="Baju1">
+                    </div>
+                    <div class="info">
+                        <h3>OOXYO CrossBody Bag</h3>
+                        <h4>$40</h4>
+                    </div>
+                </div>
+                
+    
+                <div class="product">
+                    <div class="image">
+                        <div class="overlay">
+                            <span class="block"></span>
+                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
+                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <button onclick="add()" class="Add">Add to Cart</button>
+                        </div>
+                        <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076505193807882/29.png" alt="Baju2">
+                    </div>
+                    <div class="info">
+                        <h3>QQE Children Dress</h3>
+                        <h4>$20</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div id="halaman">
+                <span style="color: #f6fafb; background-color: #252b31;" class="dot page">1</span>
+                <span style="border: 1px solid rgb(110, 108, 108);" class="dot page page2">2</span>
+            </div>
+
+            <script>
+                function add(){
+                    alert("Added to Cart!")
+                }
+                function like(){
+                    alert("Liked!")
+                }
+                var slider = document.getElementById("SliderRange");
+                var price = document.getElementById("harga");
+                price.innerHTML = slider.value;
+                slider.oninput = function() {
+                    price.innerHTML = this.value;
+                }
+
+                function colorButton1(){
+                    document.getElementById("colors1").style.border = "#252b31 solid";
+                }
+
+                function colorButton2(){
+                    document.getElementById("colors2").style.border = "#252b31 solid";
+                    
+                }
+                function colorButton3(){
+                    document.getElementById("colors3").style.border = "#252b31 solid";
+                }
+                function colorButton4(){
+                    document.getElementById("colors4").style.border = "#252b31 solid";
+                }
+                function colorButton5(){
+                    document.getElementById("colors5").style.border = "#252b31 solid";
+                }
+                function colorButton6(){
+                    document.getElementById("colors6").style.border = "#252b31 solid";
+                }
+                function colorButton7(){
+                    document.getElementById("colors7").style.border = "#252b31 solid";
+                }
+                function colorButton8(){
+                    document.getElementById("colors8").style.border = "#252b31 solid";
+                }
+            </script>
+
+        </div>
+    </div>
+    
+</body>
+</html>
