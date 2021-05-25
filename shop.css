@@ -15,8 +15,46 @@
     }
 }
 
+.banner{
+    margin-top: 40px;
+}
+
+.banner img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: 0% 95%;
+}
+
+.blck{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40PX;
+    width: 110%;
+    height: 220px;
+    display: flex;
+}
+
+.caption{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 80px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.caption h1{
+    font-size: 50px;
+}
+
+.caption p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .main-container-shop{
-    margin: 40px;
+    margin: 40px 80px;
 }
 
 #all:hover{
@@ -69,7 +107,6 @@
     border-radius: 50%;
     display: inline-block;
 }
-
 
 .red {
     background-color: red;
@@ -268,10 +305,7 @@
         margin-top: 25px;
     }
     .main-container-shop{
-        margin-right: 0px;
-    }
-    .shop-filter{
-        margin-right: 0px;
+        margin: 40px;
     }
     .shop-categories li{
         display: inline-block;
@@ -335,5 +369,15 @@
 @media (max-width: 390px){
     .image img, .block, .overlay .heart, .Add, .info{
         margin-left: 0;
+    }
+    .caption{
+        top: 100px;
+    }
+    .caption h1{
+        font-size: 30px;
+    }
+    
+    .caption p{
+        font-size: 10px;
     }
 }
