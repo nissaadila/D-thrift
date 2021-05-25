@@ -110,6 +110,11 @@
     margin-bottom: 10px;
 }
 
+.sort form select{
+    font-size: 15px;
+    border: 0.1px solid black;
+}
+
 .shop-filter{
     margin-top: 60px;
     margin-right: 30px;
@@ -238,6 +243,9 @@
         margin-right: 60px;
         margin-bottom: 10px;
     }
+    .sort form select{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 886px){
@@ -256,6 +264,9 @@
 }
 
 @media (max-width: 670px) {
+    .shop-filter{
+        margin-top: 25px;
+    }
     .main-container-shop{
         margin-right: 0px;
     }
@@ -280,14 +291,11 @@
     }
     .sort p{
         text-align: left;
-        margin: 5px 0 5px 0;
+        margin: 15px, 0;
         margin-bottom: 5px;
     }
     #halaman{
         margin-left: 5%;
-    }
-    .sort p{
-        margin: 10px 0;
     }
     .image img, .block{
         width: 90%;
