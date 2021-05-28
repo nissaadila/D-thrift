@@ -101,11 +101,25 @@
     margin-top: 10px;
 }
 
+#checkbox input{
+    position: fixed;
+    display: none;
+}
+
 .dot {
     height: 15px;
     width: 15px;
     border-radius: 50%;
     display: inline-block;
+    border: 0.3px solid gray;
+}
+
+.dot:hover{
+    border: #252b31 solid;
+}
+
+#checkbox input:checked + .dot{
+    border: #252b31 solid;
 }
 
 .red {
@@ -376,7 +390,6 @@
     .caption h1{
         font-size: 30px;
     }
-    
     .caption p{
         font-size: 10px;
     }

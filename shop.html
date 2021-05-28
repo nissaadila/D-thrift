@@ -34,7 +34,6 @@
            
             <div class="shop-filter">
                 <h3>Filters</h3>
-                <hr>
                 <div class="filter price">
                     <h4>Price</h4>
                 <div class="slider">
@@ -45,21 +44,38 @@
                 
                 <div class="filter color">
                     <h4>Color</h4>
-                    <span class="dot red" id="colors1" onclick="colorButton1()"></span>
-                    <span class="dot blue" id="colors2" onclick="colorButton2()"></span>
-                    <span class="dot purple" id="colors3" onclick="colorButton3()"></span>
-                    <span class="dot yellow" id="colors4" onclick="colorButton4()"></span>
-                    <span class="dot black" id="colors5" onclick="colorButton5()"></span>
-                    <span class="dot white" id="colors6" onclick="colorButton6()"></span>
-                    <span class="dot orange" id="colors7" onclick="colorButton7()"></span>
-                    <span class="dot green" id="colors8" onclick="colorButton8()"></span>
+                    <div id="checkbox">
+                        <input type="checkbox" name="warna" value="red" id="red">
+                        <label for="red" class="dot red"></label>
+
+                        <input type="checkbox" name="warna" value="blue" id="blue">
+                        <label for="blue" class="dot blue"></label>
+
+                        <input type="checkbox" name="warna" value="purple" id="purple">
+                        <label for="purple" class="dot purple"></label>
+
+                        <input type="checkbox" name="warna" value="yellow" id="yellow">
+                        <label for="yellow" class="dot yellow"></label>
+
+                        <input type="checkbox" name="warna" value="black" id="black">
+                        <label for="black" class="dot black"></label>
+
+                        <input type="checkbox" name="warna" value="white" id="white">
+                        <label for="white" class="dot white"></label>
+
+                        <input type="checkbox" name="warna" value="orange" id="orange">
+                        <label for="orange" class="dot orange"></label>
+
+                        <input type="checkbox" name="warna" value="green" id="green">
+                        <label for="green" class="dot green"></label>
+                    </div>
                 </div>
 
                 <div class="filter search">
                     <input type="text" placeholder="Search Products..">
                     <input type="submit" value="Search">
                 </div>
-                
+
             </div>
         </div>
 
@@ -240,33 +256,6 @@
                 price.innerHTML = slider.value;
                 slider.oninput = function() {
                     price.innerHTML = this.value;
-                }
-
-                function colorButton1(){
-                    document.getElementById("colors1").style.border = "#252b31 solid";
-                }
-
-                function colorButton2(){
-                    document.getElementById("colors2").style.border = "#252b31 solid";
-                    
-                }
-                function colorButton3(){
-                    document.getElementById("colors3").style.border = "#252b31 solid";
-                }
-                function colorButton4(){
-                    document.getElementById("colors4").style.border = "#252b31 solid";
-                }
-                function colorButton5(){
-                    document.getElementById("colors5").style.border = "#252b31 solid";
-                }
-                function colorButton6(){
-                    document.getElementById("colors6").style.border = "#252b31 solid";
-                }
-                function colorButton7(){
-                    document.getElementById("colors7").style.border = "#252b31 solid";
-                }
-                function colorButton8(){
-                    document.getElementById("colors8").style.border = "#252b31 solid";
                 }
             </script>
 
