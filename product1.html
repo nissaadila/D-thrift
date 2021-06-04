@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="myProduct.js">
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <link rel="stylesheet" href="productdetail.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <div class="main-body-detail">
+    <div class="konten-detail">
+      <div class="left-body">
+        <div class="slides-photo">
+          <a href="#slide-1" class="photos-choose">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843075616660389908/1.1.png" alt="">
+          </a>
+          <a href="#slide-2" class="photos-choose">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843075978976165919/1.2.png" alt="">
+          </a>
+          <a href="#slide-3" class="photos-choose">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076152230281236/1.3.png" alt="">
+          </a>
+          <a href="#slide-4" class="photos-choose">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076173725958184/4.png" alt="">
+          </a>
+        </div>
+
+        <div class="slides">
+          <div id="slide-1" class="slide">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843075616660389908/1.1.png" alt="">
+          </div>
+          <div id="slide-2" class="slide">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843075978976165919/1.2.png" alt="">
+          </div>
+          <div id="slide-3" class="slide">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076152230281236/1.3.png" alt="">
+          </div>
+          <div id="slide-4" class="slide">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076173725958184/4.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="konten-detail">
+      <div class="right-body">
+        <h1>Printed Stretch Jumpsuit</h1>
+        <h3>$50</h3>
+        <p>Sed pellentesque lacinia ex, nec semper odio finibus nec <br> Duis convallis sapien nisl, eget sodales eros
+          tempus quis. <br> Nunc ultricies maximus sem, sed efficitur lorem sagittis a.</p>
+
+        <div class="forms">
+          <form>
+            <h4>Size</h4>
+            <select name="Size" id="sizing">
+              <option value="Default">Choose an option</option>
+              <option value="XXS">Size XXS</option>
+              <option value="XS">Size XS</option>
+              <option value="S">Size S</option>
+              <option value="M">Size M</option>
+              <option value="L">Size L</option>
+              <option value="XL">Size XL</option>
+              <option value="XXL">Size XXL</option>
+            </select>
+          </form>
+        </div>
+
+        <div class="forms">
+          <form>
+            <h4>Color</h4>
+            <select name="Color" id="colors">
+              <option value="Default">Choose an option</option>
+              <option value="Grey">Grey</option>
+              <option value="Red">Red</option>
+              <option value="Pink">Pink</option>
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+              <option value="Yellow">Yellow</option>
+              <option value="Green">Green</option>
+              <option value="Brown">Brown</option>
+            </select>
+          </form>
+        </div>
+
+        <div id="counter"></div>
+        <button id="status" onclick="submitStatus()">Add To Cart</button>
+        <p>SKU : 12-PMF | Categories : Women</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+  <script type="text/babel">
+    class ProductCount extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = { count: 1 };
+      }
+      plusProduct() {
+        this.setState({ count: this.state.count + 1 });
+      }
+      minusProduct() {
+        if (this.state.count == 1) {
+          count: 1;
+        } else {
+          this.setState({ count: this.state.count - 1 });
+        }
+      }
+      render() {
+        return (
+          <div>
+            <h1>
+              Quantity: {this.state.count}
+            </h1>
+            <button onClick={() => { this.minusProduct() }}>-</button>
+            <button onClick={() => { this.plusProduct() }}>+</button>
+          </div>
+        )
+      }
+    }
+    ReactDOM.render(<ProductCount />, document.getElementById('counter'));
+
+    function submitStatus() {
+      alert("Added to Cart");
+    }
+  </script>
+</body>
+
+</html>
