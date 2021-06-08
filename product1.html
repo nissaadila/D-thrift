@@ -135,7 +135,17 @@
     ReactDOM.render(<ProductCount />, document.getElementById('counter'));
 
     function submitStatus() {
-      alert("Added to Cart");
+        let ukuran = document.getElementById('sizing');
+        let warna = document.getElementById('colors');
+        if(ukuran.value === 'Default'){
+            alert('Choose Size!');
+            return false;
+        }
+        if(warna.value === 'Default'){
+            alert('Choose Color!');
+            return false;
+        }
+        alert("Added to Cart");
     }
   </script>
 </body>
