@@ -6,27 +6,30 @@
     <link rel="icon" href="img/D'THRIFT.jpg" type="image/x-icon">
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
     <title>Shop</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <a href="Home.html"><img class="icon" src="img/D'THRIFT.jpg" /></a>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Sale</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
+<header>
+    <nav>
+        <ul>
+            <a href="Home.html"><img class="icon" src="img/D'THRIFT.jpg" /></a>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
     <div class="banner">
         <img src="https://cdn.discordapp.com/attachments/843073940247019520/846809929762603048/unknown.png" alt="banner">
         <span class="blck"></span>
@@ -121,8 +124,17 @@
                     <div class="image">
                         <div class="overlay">
                             <a href="./product1.html"><span class="block"></span></a>
-                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
-                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <div id="hati">
+                                <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png">
+                                <img onclick="like()" id="fav" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png">
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $("#fav").click(function(){
+                                        $("#hati").html('<img class="heart merah" src="https://cdn.discordapp.com/attachments/843073940247019520/854414592885522493/heart_1.png">');
+                                    })
+                                })
+                            </script>
                             <button onclick="add()" class="Add">Add to Cart</button>
                         </div>
                         <img src="https://cdn.discordapp.com/attachments/843073940247019520/843075616660389908/1.1.png" alt="Printed Stretch Jumpsuit">
@@ -140,8 +152,17 @@
                     <div class="image">
                         <div class="overlay">
                             <a href="#"><span class="block"></span></a>
-                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
-                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <div id="hati2">
+                                <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png">
+                                <img onclick="like()" id="fav2" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png">
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $("#fav2").click(function(){
+                                        $("#hati2").html('<img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/854414592885522493/heart_1.png">');
+                                    })
+                                })
+                            </script>
                             <button onclick="add()" class="Add">Add to Cart</button>
                         </div>
                         <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076198866485268/11.png" alt="LXX Suit">
@@ -160,8 +181,17 @@
                     <div class="image">
                         <div class="overlay">
                             <a href="#"><span class="block"></span></a>
-                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
-                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <div id="hati3">
+                                <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png">
+                                <img onclick="like()" id="fav3" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png">
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $("#fav3").click(function(){
+                                        $("#hati3").html('<img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/854414592885522493/heart_1.png">');
+                                    })
+                                })
+                            </script>
                             <button onclick="add()" class="Add">Add to Cart</button>
                         </div>
                         <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png" alt="Da Floral Jumpsuit">
@@ -179,8 +209,17 @@
                     <div class="image">
                         <div class="overlay">
                             <a href="#"><span class="block"></span></a>
-                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
-                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <div id="hati4">
+                                <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png">
+                                <img onclick="like()" id="fav4" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png">
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $("#fav4").click(function(){
+                                        $("#hati4").html('<img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/854414592885522493/heart_1.png">');
+                                    })
+                                })
+                            </script>
                             <button onclick="add()" class="Add">Add to Cart</button>
                         </div>
                         <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076273054941204/13.png" alt="Casual block Shoes">
@@ -199,8 +238,17 @@
                     <div class="image">
                         <div class="overlay">
                             <a href="#"><span class="block"></span></a>
-                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
-                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <div id="hati5">
+                                <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png">
+                                <img onclick="like()" id="fav5" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png">
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $("#fav5").click(function(){
+                                        $("#hati5").html('<img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/854414592885522493/heart_1.png">');
+                                    })
+                                })
+                            </script>
                             <button onclick="add()" class="Add">Add to Cart</button>
                         </div>
                         <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076343658053642/19.png" alt="Blue da Floral Bag">
@@ -218,8 +266,17 @@
                     <div class="image">
                         <div class="overlay">
                             <a href="#"><span class="block"></span></a>
-                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
-                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <div id="hati6">
+                                <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png">
+                                <img onclick="like()" id="fav6" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png">
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $("#fav6").click(function(){
+                                        $("#hati6").html('<img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/854414592885522493/heart_1.png">');
+                                    })
+                                })
+                            </script>
                             <button onclick="add()" class="Add">Add to Cart</button>
                         </div>
                         <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076414747574272/27.png" alt="DY Denim Jacket">
@@ -238,8 +295,17 @@
                     <div class="image">
                         <div class="overlay">
                             <a href="#"><span class="block"></span></a>
-                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
-                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <div id="hati7">
+                                <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png">
+                                <img onclick="like()" id="fav7" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png">
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $("#fav7").click(function(){
+                                        $("#hati7").html('<img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/854414592885522493/heart_1.png">');
+                                    })
+                                })
+                            </script>
                             <button onclick="add()" class="Add">Add to Cart</button>
                         </div>
                         <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076439590436904/21.png" alt="Baju1">
@@ -257,8 +323,17 @@
                     <div class="image">
                         <div class="overlay">
                             <a href="#"><span class="block"></span></a>
-                            <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png" alt="heart">
-                            <img onclick="like()" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png" alt="heart">
+                            <div id="hati8">
+                                <img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/844195434409754634/heart_1.png">
+                                <img onclick="like()" id="fav8" class="heart hov" src="https://cdn.discordapp.com/attachments/843073940247019520/844196659080724490/heart_3.png">
+                            </div>
+                            <script>
+                                $(document).ready(function(){
+                                    $("#fav8").click(function(){
+                                        $("#hati8").html('<img class="heart" src="https://cdn.discordapp.com/attachments/843073940247019520/854414592885522493/heart_1.png">');
+                                    })
+                                })
+                            </script>
                             <button onclick="add()" class="Add">Add to Cart</button>
                         </div>
                         <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076505193807882/29.png" alt="Baju2">
@@ -276,8 +351,28 @@
                 <span style="color: #f6fafb; background-color: #252b31;" class="dot page">1</span>
                 <a href="#"><span style="border: 1px solid rgb(110, 108, 108);" class="dot page page2">2</span></a>
             </div>
+
+            <script>
+                function add(){
+                    alert("Added to Cart!")
+                }
+                function like(){
+                    alert("Liked!")
+                }
+                var slider = document.getElementById("SliderRange");
+                var price = document.getElementById("harga");
+                price.innerHTML = slider.value;
+                slider.oninput = function() {
+                    price.innerHTML = this.value;
+                }
+            </script>
+
             
-            <footer>
+
+        </div>
+    </div>
+
+    <footer>
         <div class="footer-content">
             <div class="footer-section getintouch">
                 <h3>GET IN TOUCH</h3>
@@ -336,25 +431,6 @@
 
         <br><br><br>
     </footer>
-
-
-            <script>
-                function add(){
-                    alert("Added to Cart!")
-                }
-                function like(){
-                    alert("Liked!")
-                }
-                var slider = document.getElementById("SliderRange");
-                var price = document.getElementById("harga");
-                price.innerHTML = slider.value;
-                slider.oninput = function() {
-                    price.innerHTML = this.value;
-                }
-            </script>
-
-        </div>
-    </div>
     
 </body>
 </html>
