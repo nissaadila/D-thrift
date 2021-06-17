@@ -117,7 +117,7 @@ footer li{
 .left-container-shop{
     float: left;
     width: 250px;
-    height: 2000px;
+    height: 150vw;
 }
 
 .left-container-shop a{
@@ -331,11 +331,17 @@ footer li{
     .sort form select{
         font-size: 12px;
     }
+    .left-container-shop{
+        height: 160vw;
+    }
 }
 
 @media (max-width: 886px){
     .Add{
         font-size: 10px;
+    }
+    .left-container-shop{
+        height: 160vw;
     }
 }
 
@@ -345,6 +351,9 @@ footer li{
     }
     #sorting{
         margin-right: 15px;
+    }
+    .left-container-shop{
+        height: 165vw;
     }
 }
 
