@@ -198,7 +198,7 @@ a{
     color: #d49c6b;
     padding: 10px 20px 10px 20px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 16px;
     width: 50%;
 }
 
@@ -317,7 +317,7 @@ p{
     }
 }
 
-@media (max-width: 1080px){
+@media (max-width: 1137px){
     h1{
         font-size: 25px;
     }
