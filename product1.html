@@ -94,19 +94,108 @@
           </div>
     
           <div id="counter"></div>
-          <button id="status" onclick="submitStatus()">Add To Cart</button>
-          <p>SKU : 12-PMF | Categories : Women</p>
+          <div id="Chart">
+            <p  class="fa fa-times close" onclick="closeChart()"></p>
+            <table>
+              <tr>
+                <th></th>
+                <th scope="col">Length</th>
+                <th scope="col">Width</th>
+              </tr>
+              <tr>
+                <th scope="row">S</th>
+                <td>71 CM</td>
+                <td>47 CM</td>
+              </tr>
+              <tr>
+                <th scope="row">M</th>
+                <td>73 CM</td>
+                <td>49 CM</td>
+              </tr>
+              <tr>
+                <th scope="row">L</th>
+                <td>75 CM</td>
+                <td>51 CM</td>
+              </tr>
+              <tr>
+                <th scope="row">XL</th>
+                <td>77 CM</td>
+                <td>53 CM</td>
+              </tr>
+              <tr>
+                <th scope="row">XXL</th>
+                <td>79 CM</td>
+                <td>55 CM</td>
+              </tr>
+            </table>
+          </div>
+          <p id="sizeChart" onclick="openChart()"><span class="fa fa-bar-chart"></span> Size Chart</p>
+          <div id="btn">
+            <button id="status" onclick="submitStatus()">Add To Cart</button>
+            <button id="fav" onclick="like()"><span class="fa fa-heart-o"></span> Add to wishlist</button>
+          </div>
+          <p class="bawah">SKU : 12-PMF | Categories : Women</p>
         </div>
       </div>
-      
     </div>
-
   </div>
+  
+  <div class="Related">
+    <div class="relatedProduct">
+      <h3>Related Products:</h3>
 
-  <div class="related-products">
-    <h3>Related Products:</h3>
-    
+      <div id="konteiner">
+        <i id="slideLeft" class="fa fa-angle-left left"></i>
+
+        <div id="card">
+          <div class="isi">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
+            <div class="info">
+              <h4>Da Floral Jumpsuit 1</h4>
+              <p>$ 55</p>
+            </div>
+          </div>
+  
+          <div class="isi">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
+            <div class="info">
+              <h4>Da Floral Jumpsuit 2</h4>
+              <p>$ 55</p>
+            </div>
+          </div>
+  
+          <div class="isi">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
+            <div class="info">
+              <h4>Da Floral Jumpsuit 3</h4>
+              <p>$ 55</p>
+            </div>
+          </div>
+  
+          <div class="isi">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
+            <div class="info">
+              <h4>Da Floral Jumpsuit 4</h4>
+              <p>$ 55</p>
+            </div>
+          </div>
+
+          <div class="isi">
+            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
+            <div class="info">
+              <h4>Da Floral Jumpsuit 5</h4>
+              <p>$ 55</p>
+            </div>
+          </div>
+        </div>
+        
+        <i id="slideRight" class="fa fa-angle-right right"></i>
+        
+      </div>
+
+    </div>
   </div>
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
@@ -154,6 +243,32 @@
         }
         alert("Added to Cart");
     }
+
+    function openChart(){
+      document.getElementById('Chart').style.width = '40%';
+      document.getElementById('Chart').style.border = '2px solid #d49c6b';
+    }
+
+    function closeChart(){
+      document.getElementById('Chart').style.width = 0;
+      document.getElementById('Chart').style.border = 'none';
+    }
+
+    function like(){
+      alert('Added to wishlist!');
+    }
+
+    let buttonLeft = document.getElementById('slideLeft')
+    let buttonRight = document.getElementById('slideRight')
+
+    buttonLeft.addEventListener('click', function(){
+      document.getElementById('card').scrollLeft -= 50
+    })
+
+    buttonRight.addEventListener('click', function(){
+      document.getElementById('card').scrollLeft += 50
+    })
+
   </script>
 </body>
 

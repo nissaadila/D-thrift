@@ -4,6 +4,53 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: rgb(241, 241, 241)
+}
+
+#sizeChart{
+    cursor: pointer;
+    width: 25%;
+    margin-top: 2%;
+}
+
+#sizeChart:hover{
+    color: #d49c6b;
+}
+
+#Chart .close{
+    padding: 2%;
+    font-size: 150%;
+    margin: 0;
+    color: white;
+    text-align: right;
+    width: 95%;
+    cursor: pointer;
+}
+
+#Chart .close:hover{
+    color: #d49c6b;
+}
+
+#Chart table{
+    margin: auto;
+    width: 95%;
+    height: 80%;
+    text-align: center;
+}
+
+#Chart{
+    height: 40%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    left: 30%;
+    overflow-x: hidden;
+    background-color: #252b31;
+    color: white;
+}
+
 .main-body-detail{
     display: flex;
     width: 100%;
@@ -13,9 +60,11 @@
 
 .konten-detail{
     display: flex;
-    width: 95%;
+    width: 90%;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    margin-top: 20px;
 }
 
 #wrapper{
@@ -80,6 +129,10 @@
     margin-top: 3%;
 }
 
+.forms select{
+    cursor: pointer;
+}
+
 #kanan{
     width: 70%;
     display: flex;
@@ -109,17 +162,41 @@
     cursor: pointer;
 }
 
+#btn{
+    display: flex;
+    margin-top: 4%;
+}
+
 #status{
     background-color: #252b31;
     color: #f6fafb;
     padding: 10px 20px 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 4%;
+    width: 50%;
 }
 
 #status:hover{
     background-color: #d49c6b;
+}
+
+#fav{
+    background-color: white;
+    border: none;
+    color: #d49c6b;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 40%;
+}
+
+#fav:hover{
+    color: #916845;
+    font-weight: 500;
+}
+
+#liked{
+    color: red;
 }
 
 p{
@@ -129,15 +206,72 @@ p{
     width: 90%;
 }
 
-#relatedProduct img{
-    width: 15%;
+.Related{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.RelProduct{
-    float: left;
+.Related .relatedProduct{
+    width: 90%;
+    text-align: left;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 25px 0px;
 }
 
-@media (max-width: 1234px){
+.relatedProduct h3{
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+#konteiner{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#konteiner .fa{
+    font-size: 300%;
+    padding: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#konteiner .fa:hover{
+    color: #d49c6b;
+    font-size: 400%;
+}
+
+#card{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    align-items: center;
+    max-width: 82.5%;
+}
+
+#card .isi{
+    min-width: 177px;
+    padding: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    margin: 5px;
+    cursor: pointer;
+}
+
+#card .isi:hover{
+    border: 2px solid #d49c6b;
+}
+
+#card .isi img{
+    width: 100%;
+}
+
+@media (max-width: 1257px){
     h1{
         font-size: 28px;
     }
@@ -149,6 +283,10 @@ p{
     }
     h4{
         font-size: 15px;
+    }
+    #fav{
+        font-size: 15px;
+        width: 50%;
     }
 }
 
@@ -167,6 +305,19 @@ p{
     }
     .left-body{
         height: 495.58px;
+    }
+    #fav{
+        font-size: 14px;
+        width: 60%;
+    }
+    #sizeChart{
+        width: 30%;
+    }
+    #btn{
+        margin-top: 2%;
+    }
+    #kanan .bawah{
+        padding-bottom: 4%;
     }
 }
 
@@ -208,11 +359,40 @@ p{
         width: 90%;
         margin: auto;
     }
+    #card .isi{
+        min-width: 168px;
+    }
+    #card .isi h4{
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    #card .isi p{
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    #btn{
+        width: 60%;
+    }
+    #fav{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 800px){
+    #card .isi h4{
+        font-size: 12px;
+        padding: 10px 0;
+    } 
+    #card .isi p{
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 670px) {
     h1{
-        font-size: 28px;
+        font-size: 26px;
     }
     h3{
         font-size: 17px;
@@ -225,6 +405,27 @@ p{
     }
     h4{
         font-size: 15px;
+    }
+    #Chart table{
+        font-size: 12px;
+        height: 80%;
+    }
+    #Chart .close{
+        font-size: 100%;
+    }
+    #btn{
+        width: 100%;
+        display: block;
+    }
+    #status{
+        width: 95%;
+    }
+    #fav{
+        margin-top: 2%;
+        width: 95%;
+    }
+    #card .isi{
+        min-width: 25%;
     }
 }
 
@@ -244,7 +445,51 @@ p{
     p{
         font-size: 12px;
     }
+    #status{
+        font-size: 10px;
+    }
+    #fav{
+        font-size: 10px;
+    }
     #sizing, #colors{
         font-size: 11px;
+    }
+    #Chart table{
+        font-size: 9.5px;
+        height: 80%;
+    }
+    #Chart .close{
+        font-size: 80%;
+        padding: 0;
+    }
+    #card .isi h4{
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    #card .isi p{
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+    #card .isi{
+        min-width: 25%;
+    }
+    #konteiner .fa{
+        font-size: 200%;
+    }
+}
+
+@media(max-width: 373px){
+    #card .isi h4{
+        font-size: 10px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+    #card .isi p{
+        font-size: 8px;
+        padding-bottom: 5px;
+    }
+    #sizeChart{
+        font-size: 10px;
     }
 }
