@@ -10,14 +10,43 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="stylesheet" href="productdetail.css">
+  <link rel="stylesheet" href="css/nav.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header>
-
+  <header id="h">
+    <div class="header">
+      <div class="logo">
+        <ul>
+          <li><a href="main.html">
+            <img class="icon" src="img/D'THRIFT.jpg" />
+          </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar">
+  
+        <ul>
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <div class="menu">
+  
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#">Shop</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Contact</a></li>
+            <li class="link"><a href="#">Blog</a></li>
+            <li class="link"><a href="#">Account</a></li>
+          </div>
+  
+        </ul>
+      </div>
+    </div>
   </header>
+
   <div class="main-body-detail">
     <div class="konten-detail">
       <div class="left-body">
@@ -148,45 +177,55 @@
         <i id="slideLeft" class="fa fa-angle-left left"></i>
 
         <div id="card">
-          <div class="isi">
-            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
-            <div class="info">
-              <h4>Da Floral Jumpsuit 1</h4>
-              <p>$ 55</p>
+          <a href="#">
+            <div class="isi">
+              <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png" alt="Da Floral Jumpsuit">
+              <div class="info">
+                <h4>Da Floral Jumpsuit</h4>
+                <p>$55</p>
+              </div>
             </div>
-          </div>
+          </a>
   
-          <div class="isi">
-            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
-            <div class="info">
-              <h4>Da Floral Jumpsuit 2</h4>
-              <p>$ 55</p>
+          <a href="#">
+            <div class="isi">
+              <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076198866485268/11.png" alt="LXX Suit">
+              <div class="info">
+                <h4>LXX Suit</h4>
+                <p>$100</p>
+              </div>
             </div>
-          </div>
+          </a>
   
-          <div class="isi">
-            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
-            <div class="info">
-              <h4>Da Floral Jumpsuit 3</h4>
-              <p>$ 55</p>
+          <a href="#">
+            <div class="isi">
+              <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076273054941204/13.png" alt="Casual block Shoes">
+              <div class="info">
+                <h4>Casual block Shoes</h4>
+                <p>$15</p>
+              </div>
             </div>
-          </div>
+          </a>
   
-          <div class="isi">
-            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
-            <div class="info">
-              <h4>Da Floral Jumpsuit 4</h4>
-              <p>$ 55</p>
+          <a href="#">
+            <div class="isi">
+              <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076343658053642/19.png" alt="Blue da Floral Bag">
+              <div class="info">
+                <h4>Blue da Floral Bag</h4>
+                <p>$25</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="isi">
-            <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076219812577340/5.png">
-            <div class="info">
-              <h4>Da Floral Jumpsuit 5</h4>
-              <p>$ 55</p>
+          <a href="#">
+            <div class="isi">
+              <img src="https://cdn.discordapp.com/attachments/843073940247019520/843076414747574272/27.png" alt="DY Denim Jacket">
+              <div class="info">
+                <h4>DY Denim Jacket</h4>
+                <p>$23</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         
         <i id="slideRight" class="fa fa-angle-right right"></i>
@@ -195,8 +234,6 @@
 
     </div>
   </div>
-  
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
@@ -268,8 +305,78 @@
     buttonRight.addEventListener('click', function(){
       document.getElementById('card').scrollLeft += 50
     })
-
   </script>
 </body>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section getintouch">
+      <h3>GET IN TOUCH</h3>
+      <p>isi description...</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section categories">
+      <h3>CATEGORIES</h3>
+      <!-- <br /> -->
+      <ul>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section link">
+      <h3>LINK</h3>
+      <!-- <br /> -->
+      <ul>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section help">
+      <h3>HELP</h3>
+      <!-- <br /> -->
+      <ul>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Shippings</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section newsletter">
+      <h3>NEWSLETTER</h3>
+      <form action="#" method="post">
+        <input
+          class="text-input contact-input"
+          type="email"
+          name="email"
+          placeholder="email@example.com"
+        />
+
+        <button type="submit" name="button" class="btn btn-big">
+          Subscribe
+        </button>
+      </form>
+
+    </div>
+    <!--copyright kedua  -->
+    <div class="footer-section copyright2">
+      <p>Copyright - Kelompok 5</p>
+    </div>
+  </div>
+  <!-- copyright pertama -->
+  <div class="copyright">
+    <p>Copyright - Kelompok 5</p>
+  </div>
+</footer>
+
 
 </html>
