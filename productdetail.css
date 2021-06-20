@@ -63,7 +63,7 @@ a{
 
 .konten-detail{
     display: flex;
-    width: 90%;
+    width: 95%;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -227,7 +227,7 @@ p{
 }
 
 .Related .relatedProduct{
-    width: 90%;
+    width: 95%;
     text-align: left;
     background-color: white;
     margin-top: 15px;
