@@ -2,6 +2,97 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#h{
+    height: 170px;
+    padding-top: 10px;
+}
+
+.header ul{
+    margin: 0 0 10px;
+    padding: 0 0 0 40px;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.header .navbar a{
+    font-weight: 500;
+}
+
+.header .navbar{
+    margin: 0 0 20px;
+}
+
+.header .navbar label{
+    padding-top: 21px;
+    padding-right: 1px;
+    transform: scale(1.063,1);
+}
+
+.icon{
+    margin-top: 10px;
+}
+
+.menu{
+    padding-top: 21px;
+}
+
+.menu .link{
+    margin-left: 0;
+    position: relative;
+    left: -5px;
+}
+
+footer{
+    margin-bottom: 10px;
+    position: relative;
+    top: 150px;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+footer p{
+    margin: 0 0 10px;
+    color: white;
+    opacity: 0.8;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+footer ul{
+    padding: 0 0 0 40px;
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer .socials .fab{
+    font-size: 18px;
+    width: 100%;
+}
+
+footer input{
+    font-weight: 500;
+}
+
+footer .copyright p{
+    width: 100%;
+}
+
+@media(max-width: 900px) {
+    #h{
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
 
 .account-welcome{
     margin-top: 80px;
