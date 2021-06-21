@@ -59,6 +59,8 @@ a{
     justify-content: center;
     align-items: center;
     background-color: rgb(241, 241, 241);
+    position: relative;
+    top: 150px;
 }
 
 .konten-detail{
@@ -206,10 +208,6 @@ a{
     font-weight: 500;
 }
 
-#liked{
-    color: red;
-}
-
 p{
     margin-top: 4%;
     color: #5e6668;
@@ -223,6 +221,8 @@ p{
     justify-content: center;
     align-items: center;
     background-color: rgb(241, 241, 241);
+    position: relative;
+    top: 150px;
 }
 
 .Related .relatedProduct{
@@ -396,6 +396,7 @@ p{
     #fav{
         font-size: 15px;
     }
+    
 }
 
 @media(max-width: 800px){
@@ -451,6 +452,7 @@ p{
     #card .isi h4{
         height: 30px;
     } 
+    
 }
 
 @media (max-width: 398px) {
@@ -525,8 +527,10 @@ p{
 }
 
 /*Header & Footer*/
+
 #h{
-    height: 150px;
+    height: 170px;
+    padding-top: 10px;
 }
 
 .header ul{
@@ -555,7 +559,7 @@ p{
 }
 
 .menu{
-    padding-top: 25px;
+    padding-top: 21px;
 }
 
 .menu .link{
@@ -566,6 +570,8 @@ p{
 
 footer{
     margin-bottom: 10px;
+    position: relative;
+    top: 150px;
 }
 
 footer h3 {
@@ -580,7 +586,8 @@ footer h3 {
 
 footer p{
     margin: 0 0 10px;
-    color: black;
+    color: white;
+    opacity: 0.8;
     font-weight: 500;
     font-size: 14px;
 }
@@ -603,4 +610,11 @@ footer input{
 
 footer .copyright p{
     width: 100%;
+}
+
+@media(max-width: 900px) {
+    #h{
+        height: auto;
+        padding-bottom: 20px;
+    }
 }
