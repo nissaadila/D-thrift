@@ -529,7 +529,7 @@ p{
 /*Header & Footer*/
 
 #h{
-    height: 170px;
+    height: 145px;
     padding-top: 10px;
 }
 
@@ -554,12 +554,12 @@ p{
     transform: scale(1.063,1);
 }
 
-.icon{
-    margin-top: 10px;
-}
+/* .icon{
+    margin-top: 4px;
+} */
 
 .menu{
-    padding-top: 21px;
+    padding-top: 11px;
 }
 
 .menu .link{
