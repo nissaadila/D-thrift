@@ -4,6 +4,10 @@
     font-family: "Poppins", 'Times New Roman', Times, serif;
 }
 
+.header ul{
+	list-style-type:none;
+}
+
 .logo{
     margin-top: 10px;
     margin-left: 40px;
