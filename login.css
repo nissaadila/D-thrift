@@ -28,6 +28,10 @@
     transform: scale(1.063,1);
 }
 
+.header ul{
+	list-style-type:none;
+}
+
 .icon{
     margin-top: 10px;
 }
